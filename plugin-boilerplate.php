@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin name: FF Plugin Boilerplate
- * Version: 2.0
+ * Version: 1.0
  * Description: Enter plugin description here
  * Plugin URI: https://www.fivebyfive.com.au/
  * Author: Five by Five
@@ -41,7 +41,7 @@ class Plugin {
         // /wp-admin/admin.php?page=plugin_slug
         add_action('admin_menu', function(){
             add_submenu_page( 'fivebyfive', $this->plugin_name, $this->plugin_name, 'manage_options', $this->plugin_slug, function(){
-                include 'admin/settings/settings.php';
+                include 'src/admin/settings/settings.php';
             });
         });
     }
