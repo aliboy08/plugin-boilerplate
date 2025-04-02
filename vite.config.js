@@ -2,7 +2,10 @@ import { v4wp } from './v4wp/v4wp';
 import mkcert from 'vite-plugin-mkcert';
 
 export default {
-	server: { https: true },
+	server: {
+        https: true,
+        cors: true,
+    },
 	plugins: [
 		v4wp({
 			input: {

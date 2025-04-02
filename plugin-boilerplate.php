@@ -41,7 +41,7 @@ class Plugin {
         // /wp-admin/admin.php?page=plugin_slug
         add_action('admin_menu', function(){
             add_submenu_page( 'fivebyfive', $this->plugin_name, $this->plugin_name, 'manage_options', $this->plugin_slug, function(){
-                include 'src/admin/settings/settings.php';
+                include 'src/admin/admin.php';
             });
         });
     }
